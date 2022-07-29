@@ -7,7 +7,7 @@ PWD=$(shell pwd)
 VERILOG_SOURCES = $(PWD)/mux.v
 
 TOPLEVEL := mux          # design
-MODULE   := test_mux2     # test
+MODULE   := testmux2     # test
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 

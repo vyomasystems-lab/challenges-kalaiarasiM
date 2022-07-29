@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/workspace/challenges-kalaiarasiM'
+make: Leaving directory '/workspace/challenges-kalaiarasiM'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

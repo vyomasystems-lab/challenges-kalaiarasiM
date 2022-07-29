@@ -10,7 +10,7 @@ module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8,
             inp7, inp8, inp9, inp10, inp11, inp12, inp13, 
             inp14, inp15, inp16, inp17, inp18, inp19, inp20,
             inp21, inp22, inp23, inp24, inp25, inp26,
-            inp27, inp28, inp29, inp30;
+            inp27, inp28, inp29, inp30, inp31;
 
   output [1:0] out;
   reg [1:0] out;
@@ -21,7 +21,7 @@ module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8,
             inp7 or inp8 or inp9 or inp10 or inp11 or inp12 or inp13 or 
             inp14 or inp15 or inp16 or inp17 or inp18 or inp19 or inp20 or
             inp21 or inp22 or inp23 or inp24 or inp25 or inp26 or inp27 or 
-            inp28 or inp29 or inp30 )
+            inp28 or inp29 or inp30 or inp31 )
 
   begin
     case(sel)
@@ -55,6 +55,8 @@ module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8,
       5'b11011: out = inp27;
       5'b11100: out = inp28;
       5'b11101: out = inp29;
+      5'b11110: out = inp30;
+      5'b11111: out = inp31;
       default: out = 0;
     endcase
   end
