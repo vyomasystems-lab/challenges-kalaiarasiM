@@ -1,5 +1,3 @@
-# See LICENSE.vyoma for details
-
 import cocotb
 from cocotb.triggers import Timer
 from cocotb.result import TestFailure
@@ -8,7 +6,7 @@ def test_mux(dut):
     """Test for mux2"""
     cocotb.log.info('##### CTB: Develop your test here ########')
     dut.inp0.value = 0
-    dut.inp1.value = 0
+    dut.inp1.value = 3
     dut.inp2.value = 1
     dut.inp3.value = 2
     dut.inp4.value = 2
@@ -37,9 +35,9 @@ def test_mux(dut):
     dut.inp27.value = 0
     dut.inp28.value = 0
     dut.inp29.value = 0
-    dut.inp30.value = 1
-  
+    dut.inp30.value = 3  
+
+    dut.sel.value = 1
     yield Timer(1, "ns") 
-    
-    if dut.out==2 : 
+    if  dut.out.value != 3:
         raise TestFailure("Failure!")
