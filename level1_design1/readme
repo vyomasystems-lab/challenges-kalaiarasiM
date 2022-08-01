@@ -1,3 +1,9 @@
 This design gives the detailed structure of a 32x1 multiplexer
 here the input for the multiplexer is designed with 31 input instead of 32 input.
 hence the design was modified and the results were verified for all the conditions
+ 
+ the textmux2.py shows the verification model in which sel shows the select signal to chose the output value to be fetched formthe input
+ here initially the fixed values for the 32 inputs were given
+
+ if a select value is given then it will chech the value whether the value getting out of the mux is correct or not
+ example select line 1 value is selected according to the process then the value for sel1 is 3 , the value other than 3 will be considered as an error.
