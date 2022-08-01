@@ -1,0 +1,6 @@
+This file shows the bitmanupulation co processor design in which 
+ALU is constructed in mkbitmanip.v and is verified with model_mkbitmanip.py
+
+when the value is not matched with the model then it will diplays the error message
+
+in model_mkbitmanip.py the if condition for the given value is not given and is corrected in the level2_ design

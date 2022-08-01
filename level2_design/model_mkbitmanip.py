@@ -732,8 +732,7 @@ def bitmanip(mav_putvalue_instr, mav_putvalue_src1,mav_putvalue_src2, mav_putval
         #print("mav_putvalue after adding valid bit",hex(mav_putvalue))
         return mav_putvalue
 
-
-    def slo(src1,src2):
+    if((func7_imm == "0001000")and(func3 == "001") and (func3 == "101") and (opcode == "0010011")):
         print('--SLO function')
         shamt1= src2 & (31)
         out=((src1)<< shamt1)
@@ -769,6 +768,6 @@ def bitmanip(mav_putvalue_instr, mav_putvalue_src1,mav_putvalue_src2, mav_putval
 
 
     #print('--INVALID ')
-    return 0
+    return 0xa
 
 
