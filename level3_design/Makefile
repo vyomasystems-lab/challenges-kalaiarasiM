@@ -6,10 +6,10 @@ PWD=$(shell pwd)
 
 VERILOG_SOURCES = $(PWD)/myfile.v               # provide your design path
 
-TOPLEVEL := myfile          # design file
-MODULE   :=     # test file
+TOPLEVEL := fspeed         # design file
+MODULE   := test    # test file
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 
 clean_all: clean
-	rm -rf *.xml sim_build __pycache__ 
+	rm -rf *.xml sim_build __pycache__
