@@ -1,0 +1,7 @@
+This design shows the sequential detector design for detecting the sequence 1011
+in SEQ_1 the value got altered which shows the error
+
+if 1 is given as input it will goes to next state if the input is 0 then it will goes to the next state , 
+if the the input is 1 then it will goes to the next state if the value is 1 then it will goes as high 
+means it detect the sequence 1011 else if it doesnt satisfy the values then again it
+goes back to the reset state.
