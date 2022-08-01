@@ -36,7 +36,7 @@ def test_mux(dut):
     dut.inp28.value = 0
     dut.inp29.value = 0
     dut.inp30.value = 3  
-
+    dut.inp31.value = 3  
     dut.sel.value = 1
     yield Timer(1, "ns") 
     if  dut.out.value != 3:

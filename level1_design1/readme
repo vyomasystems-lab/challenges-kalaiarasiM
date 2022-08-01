@@ -1,0 +1,3 @@
+This design gives the detailed structure of a 32x1 multiplexer
+here the input for the multiplexer is designed with 31 input instead of 32 input.
+hence the design was modified and the results were verified for all the conditions
